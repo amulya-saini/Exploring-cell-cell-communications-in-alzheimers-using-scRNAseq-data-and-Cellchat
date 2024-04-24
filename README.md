@@ -36,3 +36,39 @@ devtools::install_github("jokergoo/ComplexHeatmap")
 devtools::install_github("jokergoo/circlize")
 devtools::install_github("immunogenomics/presto")
 ```
+
+# Analysis Pipeline
+
+## Data Preprocessing:
+- Preprocess scRNA-seq data, including quality control, normalization, and dimensionality reduction.
+- Assess quality control metrics, including the number of expressed features, total counts, and mitochondrial gene content.
+
+## Dimensionality Reduction:
+- Use Principal Component Analysis (PCA) and Uniform Manifold Approximation and Projection (UMAP) for dimensionality reduction and visualization.
+
+## Clustering:
+- Cluster cells based on transcriptomic profiles to identify distinct cell populations.
+
+## Differential Expression Analysis:
+- Perform differential expression analysis to identify marker genes for each cell cluster.
+
+## Cell Type Annotation:
+- Identify cell types using clustering and marker gene expression analysis.
+
+## Cell-Cell Communication Analysis:
+- Utilize CellChat to investigate cell-cell communication networks and signaling pathways affected by APC treatment.
+
+## Visualization:
+- Visualize transcriptomic changes, cell clusters, and communication networks using dimensionality reduction techniques, heatmaps, and network plots.
+
+## Interpretation:
+- Interpret the results to gain insights into the molecular mechanisms underlying APC-mediated modulation of AD.
+
+
+# Usage
+To replicate the analysis or explore the data further, follow the steps outlined in the provided R scripts. Ensure that the required R packages are installed and the data files are correctly sourced.
+
+# References
+- Fatmi MK, Wang H, Slotabec L, Wen C et al. Single-Cell RNA-seq reveals transcriptomic modulation of Alzheimer's disease by activated protein C. Aging (Albany NY) 2024 Feb 21;16(4):3137-3159. PMID: 38385967
+- Jin, S., Guerrero‐Juarez, C. F., Zhang, L., Chang, I., Ramos, R., Kuan, C., Myung, P., & Plikus, M. V. (2021). Inference and analysis of cell-cell communication using CellChat. Nature Communications, 12(1). https://doi.org/10.1038/s41467-021-21246-9
+- [CellChat V2](https://github.com/jinworks/CellChat) 
