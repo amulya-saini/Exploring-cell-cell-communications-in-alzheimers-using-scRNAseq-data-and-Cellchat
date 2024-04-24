@@ -23,11 +23,16 @@ The primary goal is to decipher the transcriptomic alterations and intercellular
 ## R Packages
 
 # Install the following R packages:
+
+```
 install.packages(c("devtools", "patchwork", "Matrix", "Seurat", "dplyr", "tidyr", "circlize", "digest", "NMF", "presto", "BiocManager"))
+```
 
 # Install additional packages from GitHub:
+
+```
 devtools::install_github("jinworks/CellChat")
 devtools::install_github("jokergoo/ComplexHeatmap")
 devtools::install_github("jokergoo/circlize")
 devtools::install_github("immunogenomics/presto")
-
+```
