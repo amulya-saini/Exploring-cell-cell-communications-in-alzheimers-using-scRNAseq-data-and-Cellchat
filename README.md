@@ -57,6 +57,9 @@ devtools::install_github("immunogenomics/presto")
 
 ## Cell-Cell Communication Analysis:
 - Utilize CellChat to investigate cell-cell communication networks and signaling pathways affected by APC treatment.
+  - Cellchat aggregates gene expression data across clusters, instead of looking at individual cells, it focuses on how a clusters expresses ligands or receptors.
+  - For each cluster it will identify over expressed ligands and receptors (the more fine the cluster identities are, the more interactions it can identify).
+  - These over expressed ligands and receptors for each clusters are believed to be involved in signaling. It uses wilcoxon rank sum test to identify these genes.  
 
 ## Visualization:
 - Visualize transcriptomic changes, cell clusters, and communication networks using dimensionality reduction techniques, heatmaps, and network plots.
